@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <Logo />
         </div>
-        <Image src={LogoMobile} alt="logo" width={120} />
+        <Image src={LogoMobile} alt="logo" width={120} className="md:hidden" />
         <div className="hidden lg:block">
           <ul>
             <li className="inline-block px-8 text-lg">About</li>

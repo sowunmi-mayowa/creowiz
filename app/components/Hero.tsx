@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="h-full flex justify-center items-center">
             {/* "Note Taking" - slides in from left */}
             <motion.h1
-              className="text-6xl absolute top-32 left-32"
+              className="text-3xl lg:text-5xl xl:text-6xl absolute top-32 left-12 xl:left-32"
               initial={{ x: -200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{
@@ -29,7 +29,7 @@ const Hero = () => {
 
             {/* "Redefined" - slides in from right */}
             <motion.h1
-              className="text-6xl absolute bottom-56 right-28 text-[#166E4E]"
+              className="text-3xl lg:text-5xl xl:text-6xl absolute bottom-56 right-18 xl:right-28 text-[#166E4E]"
               initial={{ x: 200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{
