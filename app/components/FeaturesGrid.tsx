@@ -263,7 +263,7 @@ const FeaturesGrid = () => {
             <div></div>
 
             {/* Special Text - Positioned absolutely to span the empty spaces */}
-            <div className="absolute left-20 top-3/4 -bottom-20 transform -translate-y-1/2 max-w-md">
+            <div className="absolute left-20 xl:left-[720px] top-3/4 -bottom-20 transform -translate-y-1/2 max-w-md">
               <p className="text-4xl leading-tight text-white">
                 Creative people worldwide rely on this app to craft ideas into{" "}
                 <span className="text-[#166E4E]">digital magic</span>.
