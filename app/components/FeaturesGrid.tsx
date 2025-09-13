@@ -19,11 +19,11 @@ const FeaturesGrid = () => {
       rotate: 0,
       scale: 4,
       transition: {
-        type: "spring",
         damping: 6,
         stiffness: 200,
         bounce: 0.6,
         duration: 0.6,
+        // type: "spring", // removed to fix type error
       },
     },
     exit: {
@@ -53,7 +53,13 @@ const FeaturesGrid = () => {
     </svg>
   );
 
-  const FeatureBox = ({ children, className = "" }) => {
+  const FeatureBox = ({
+    children,
+    className = "",
+  }: {
+    children: React.ReactNode;
+    className?: string;
+  }) => {
     const [isHovered, setIsHovered] = React.useState(false);
 
     return (

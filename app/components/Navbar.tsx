@@ -18,7 +18,7 @@ const Navbar = () => {
         document.querySelector('[data-component="header"]');
 
       if (header) {
-        const headerHeight = header.offsetHeight;
+        const headerHeight = (header as HTMLElement).offsetHeight;
         setIsSticky(window.scrollY > headerHeight);
       } else {
         // Fallback: use a pixel value if header not found
