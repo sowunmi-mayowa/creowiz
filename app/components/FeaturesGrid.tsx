@@ -19,11 +19,11 @@ const FeaturesGrid = () => {
       rotate: 0,
       scale: 4,
       transition: {
+        type: "spring" as const,
         damping: 6,
         stiffness: 200,
         bounce: 0.6,
         duration: 0.6,
-        // type: "spring", // removed to fix type error
       },
     },
     exit: {
@@ -99,7 +99,7 @@ const FeaturesGrid = () => {
           </p>
           <h1 className="text-4xl lg:text-6xl font-bold mt-4">Key Features</h1>
           <p className="text-gray-300 mt-4 text-lg max-w-md leading-6">
-            We're proud to announce with the features that empower creatives
+            We are proud to announce with the features that empower creatives
             every day.
           </p>
         </div>
